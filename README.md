@@ -1,2 +1,6 @@
 # project-another-project
-another school project .instead of profession, we are now doing animals
+
+So we do animals this time
+stuff added:
+- Added loading bar
+- 

@@ -9,12 +9,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
     
     modelViewer.addEventListener('load', () => {
+        console.log('loaded');
+        document.getElementsByClassName('container')[0].style.display = 'block';
         barContainer.style.display = 'none';
+        document.getElementById('fun').style.display = 'none';
     });
 
     modelViewer.addEventListener('error', (error) => {
         console.error("oh no.");
+        document.getElementsByClassName('container')[0].style.display = 'block';
         barContainer.style.display = 'none';
         document.getElementById('error').style.display = 'block';
+        document.getElementById('fun').style.display = 'none';
     });
 });
